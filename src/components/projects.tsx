@@ -56,7 +56,7 @@ async function getProjectsUsingApollo() {
       query: GET_PROJECTS,
       variables: {
         name: "harish876",
-        pinned: 7,
+        pinned: 5,
         languages: 3,
       },
       fetchPolicy: "no-cache",
@@ -127,7 +127,7 @@ function ProjectCard({ details }: { details: ProjectCardProps }) {
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
           {details.projectUrl && <Button variant="outline" className="w-auto">
-            <Link href={details?.projectUrl}className="flex justify-center space-x-2 align-middle my-auto">
+            <Link target="_blank" href={details?.projectUrl}className="flex justify-center space-x-2 align-middle my-auto">
               <p>Website</p>
               <Icons.externalLink className="h-4 w-4 mt-[0.10rem]"/>
             </Link>

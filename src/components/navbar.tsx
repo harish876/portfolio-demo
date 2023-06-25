@@ -32,6 +32,7 @@ import {
 
 import { components as details, iconComponents } from "@/lib/constants";
 import { MainNav } from "./main-nav";
+import { Separator } from "./ui/separator";
 export function ModeToggle() {
   const { setTheme } = useTheme();
 
@@ -70,18 +71,15 @@ export function MenuDropdown() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem  onClick={()=>router.push('#projects')}>
           {" "}
-          <Link href="#" className="flex justify-between space-x-6">
+          <Link href="#project" className="flex justify-between space-x-6 p-4">
             <p>Projects</p>
           </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
+          <Separator/>
           {" "}
-          <Link href="#blog" className="flex justify-between space-x-6">
+          <Link href="#blog" scroll={true} className="flex justify-between space-x-6 p-4">
             <p>Blog</p>
           </Link>
-        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

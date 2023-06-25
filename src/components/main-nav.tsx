@@ -1,12 +1,15 @@
+"use client"
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+import { usePathname } from 'next/navigation'
 
 export function MainNav({
   className,
   ...props
 }: React.HTMLAttributes<HTMLElement>) {
+  const pathname = usePathname()
   return (
     <nav
       className={cn("flex items-center space-x-4 lg:space-x-6", className)}
@@ -23,10 +26,7 @@ export function MainNav({
       </Button>
       <Button variant="ghost">
         {" "}
-        <Link
-          href="#project"
-          className="text-sm font-medium transition-colors hover:text-primary"
-        >
+        <Link href="/#project" scroll={false}>
           Projects
         </Link>
       </Button>

@@ -81,14 +81,14 @@ export function Description({}: DescriptionProps) {
         Things with a CGPA of 9.2. I know it doesn't matter but thats all I have
         to show for from College.
       </ListItem>
-      <ListItem href="/docs" title="Personal" id="personal">
+      <ListItem href="" title="Personal" id="personal">
         I am a Tamil Native,from Chennai. I love Basketball and American
         Football. Yes, American Football. I love Hip Hop music and consider
         myself as a halfway decent Music Head. I am a Gym Bro as well ,
         currently on a Gym Sabbatical due to a lower back tweak. The comeback is
         going to be crazy, trust me.
       </ListItem>
-      <ListItem href="/docs" title="Tech Stuff" id="tech-stuff">
+      <ListItem href="" title="Tech Stuff" id="tech-stuff">
         I am predominantly a JS and a TS Developer. In this space I love
         exploring Frontend frameworks like Next, Astro, Svelte by building Non
         revenue generating side projects. I am very interested in exploring GRPC
