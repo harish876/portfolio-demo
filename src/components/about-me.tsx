@@ -93,7 +93,7 @@ export function Description({}: DescriptionProps) {
         exploring Frontend frameworks like Next, Astro, Svelte by building Non
         revenue generating side projects. I am very interested in exploring GRPC
         and ProtoBufs. Expect some side projects on this shortly. I am
-        proficient in C++ and I am plan to get decent at Rust in 2-3 months.
+        proficient in C++ and I plan to get decent at Rust in 2-3 months.
       </ListItem>
     </div>
   );
